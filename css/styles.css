@@ -239,8 +239,9 @@ background-size: cover; */
 
 .section-two-list {
     display: flex;
-    gap: 24px;
-    margin: 0;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
 }
 
 .title-section-two {
@@ -266,7 +267,7 @@ background-size: cover; */
 }
 
 .item-section-two {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
 }
 
 .features-icon {
@@ -275,16 +276,17 @@ background-size: cover; */
     border-radius: 4px;
     width: 264px;
     height: 112px;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
+    display: none;
 }
 
 
 .name-section-two {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -293,16 +295,50 @@ background-size: cover; */
 }
 
 .text-section-two {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    width: 264px;
+    width: 288px;
     margin-top: 8px;    
     margin-bottom: 0;
 }
 
+/****************** section two 768 *******************/
+@media screen and (min-width: 768px) {
+.name-section-two {
+    font-size: 36px;
+    }
+.section-two-list {
+    gap: 24px;
+    row-gap: 72px;
+    }
+/* .item-section-two {
+    width: calc((100% - 24px) / 2);
+} */
+.text-section-two {
+    width: 356px;
+}
+}
+
+/****************** section two 1158 *******************/
+@media screen and (min-width: 1158px) {
+.features-icon {
+    display: flex;
+}
+.name-section-two {
+    font-size: 20px;
+}
+
+.item-section-two {
+    width: calc((100% - 72px) / 4);
+}
+.text-section-two {
+    font-weight: 400;
+    width: 264px;
+}
+}
 
 /*********************** section three *************************/
 
@@ -518,7 +554,7 @@ row-gap: 64px;
 /****************** section four 768 *******************/
 @media screen and (min-width: 768px) {}
 
-/****************** section four1158 *******************/
+/****************** section four 1158 *******************/
 @media screen and (min-width: 1158px) {}
 
 
