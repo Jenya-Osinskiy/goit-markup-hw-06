@@ -3,6 +3,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     margin: 0 auto;
+    max-width: 320px;
     
     
 }
@@ -234,11 +235,11 @@ background-size: cover; */
 }
 
 .mob-nav {
-    /* margin: 0 auto;
+    margin: 0 auto;
     padding: 24px 24px 40px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -265,17 +266,46 @@ background-size: cover; */
 .mob-link-tip {
     color: #404bbf;
 }
+
 .mob-address {
-    margin-bottom: 4px;
+    margin-bottom: 48px;
 }
-.mob-container {
-    position: absolute;
-    width: 320px;
-    margin: 0 auto;
-    padding: 24px 24px 40px 16px;
+
+.mob-list-address {
+    margin-bottom: 24px;
+}
+
+.mob-link-addres {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-link-addres:hover,
+.mob-link-addres:focus {
+    color: #4d5ae5;
+}
+
+.mob-list-soc {
     display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
+}
+
+.mob-container {
+    
+    /* max-width: 320px;
+    margin: 0 auto;
+    /* padding: 24px 24px 40px 16px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */ 
 }
 /****************** logo menu addres 768 *******************/
 
@@ -301,7 +331,7 @@ body {
     display: none;
 }
 .mob-nav {
-        display: none;
+    display: none;
     }
 }
 
