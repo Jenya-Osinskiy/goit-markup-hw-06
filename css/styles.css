@@ -1264,3 +1264,7 @@ row-gap: 64px;
 @media screen and (min-width: 1158px) {
 
 }
+
+.soc-invis {
+    display: none;
+}
