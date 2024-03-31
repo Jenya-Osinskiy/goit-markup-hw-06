@@ -356,7 +356,7 @@ body {
     z-index: 3;
 }
 
-.section-one-bg {
+.section-mob-bg {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -364,6 +364,7 @@ body {
     object-fit: cover;
     object-position: center;
     z-index: -2;
+
     
 }
 .section-one::before {
@@ -421,26 +422,51 @@ body {
     background-color: #404BBF;
 }
 
+@media screen and (min-width: 320px) {
+.section-tab-bg {
+        display: none;
+    }
+        .section-des-bg {
+            display: none;
+        }
+}
+
 
 /****************** section one 768 *******************/
 @media screen and (min-width: 768px) {
 .section-one {
         max-width: 768px;
         padding: 112px 0;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-tab.jpg");
+        /* background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-tab.jpg"); */
 }
 
 .title-section-one {
         font-size: 56px;
         margin-bottom: 36px;
 }
+.section-tab-bg {
+    display: block;
+}
 
-@media screen and (min-resolution: 192dpi),
+
+.section-tab-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+
+
+}
+
+/* @media screen and (min-resolution: 192dpi),
 (min-resolution: 2dppx),
 (min-device-pixel-ratio: 2) {
     .section-one {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-tab-2x.jpg");
-    }}
+    }} */
 
 }
 
@@ -448,19 +474,31 @@ body {
 @media screen and (min-width: 1158px) {
 
 .section-one {
-        max-width: 1440px;
-        padding: 188px 0;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+    max-width: 1440px;
+    padding: 188px 0;
+        /* background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg"); */
 }
 .title-section-one {
     margin-bottom: 48px;
 }
-@media screen and (min-resolution: 192dpi),
+/* @media screen and (min-resolution: 192dpi),
 (min-resolution: 2dppx),
 (min-device-pixel-ratio: 2) {
     .section-one {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2x.jpg");
-    }}
+    }} */
+
+.section-des-bg {
+    position: absolute;
+     inset: 0;
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+    
+    
+        }
 }
 
 /*******************  section two  *********************/
