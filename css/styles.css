@@ -2,8 +2,7 @@ body {
     background-color: #fff;
     font-family: "Roboto", sans-serif;
     color: #434455;
-    margin: 0 auto;
-    max-width: 320px;
+    
     
     
 }
@@ -47,6 +46,11 @@ input {
     font-family: inherit;
 }
 
+.main {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
 .nav-section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -73,6 +77,8 @@ input {
 
 
 .header {
+    max-width: 320px;
+    margin: 0 auto;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -292,8 +298,11 @@ input {
 
 
 @media screen and (min-width: 768px) {
-body {
-    max-width: 768px;
+.main {
+        max-width: 768px;
+    }
+    .header {
+        max-width: 768px;
 }
 .list {
     display: flex;
@@ -318,9 +327,15 @@ body {
 
 /****************** logo menu addres 1158 *******************/
 @media screen and (min-width: 1158px) {
- body {
+.header {
+        max-width: 1440px;
+        
+}
+
+.main {
     max-width: 1440px;
- }   
+}
+
 .list {
     gap: 40px;
     flex-wrap: nowrap;
@@ -834,7 +849,9 @@ row-gap: 64px;
 
 
 .down {
-    background-color: #2e2f42;    
+    background-color: #2e2f42;
+    max-width: 320px;
+    margin: 0 auto;    
 }
 
 .down-container {
@@ -993,7 +1010,10 @@ row-gap: 64px;
 
 /****************** footer 768 *******************/
 @media screen and (min-width: 768px) {
-.container {
+.down {
+        max-width: 768px;
+    }
+    .container {
         width: 768px;  
     }
 
@@ -1031,11 +1051,14 @@ row-gap: 64px;
 }
 /****************** footer 1158 *******************/
 @media screen and (min-width: 1158px) {
-    .container {
+.down {
+        max-width: 1440px;
+    }
+.container {
     width: 1158px;
     }
 
-    .down-container{
+.down-container{
     padding: 100px 15px;
     display: flex;
     align-items: baseline;
