@@ -16,10 +16,10 @@ let mobnav = document.querySelector('.mob-nav');
 let mobclosebut = document.querySelector('.mob-close-but');
 
 navbtnopen.addEventListener('click', () => {
-    mobnav.classList.add('is-open');
+    mobnav.classList.add('is-open-nav');
 })
 
 mobclosebut.addEventListener('click', (e) => {
     e.preventDefault();
-    mobnav.classList.remove('is-open');
+    mobnav.classList.remove('is-open-nav');
 })
