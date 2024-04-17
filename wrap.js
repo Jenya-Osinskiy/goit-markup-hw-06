@@ -13,8 +13,8 @@ let options = {
 let observer = new IntersectionObserver(onEntry, options);
 let namesectiontwo = document.querySelectorAll('.name-section-two');
 let textsectiontwo = document.querySelectorAll('.text-section-two');
-// let headingitworks = document.querySelectorAll('.heading-it-works');
-// let textitworks = document.querySelectorAll('.it-work-text');
+let titlesectionone = document.querySelectorAll('.title-section-one');
+let buttonsectionone = document.querySelectorAll('.button-section-one');
 // let advertext = document.querySelectorAll('.adver-text');
 // let vegetablestitle = document.querySelectorAll('.vegetables-title');
 // let vegetablestext = document.querySelectorAll('.vegetables-text');
@@ -29,12 +29,12 @@ for (let elm of namesectiontwo) {
 for (let elm of textsectiontwo) {
   observer.observe(elm);
 }
-// for (let elm of headingitworks) {
-//   observer.observe(elm);
-// }
-// for (let elm of textitworks) {
-//   observer.observe(elm);
-// }
+for (let elm of titlesectionone) {
+  observer.observe(elm);
+}
+for (let elm of buttonsectionone) {
+  observer.observe(elm);
+}
 // for (let elm of advertext) {
 //   observer.observe(elm);
 // }
