@@ -464,16 +464,16 @@ input {
     margin-left: auto;
     margin-right: auto; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 500ms;
+    /* transition: all 500ms;
     transform: translateX(-50px);
-    opacity: 0;
+    opacity: 0; */
 }
 
-.button-section-one.element-show {
+/* .button-section-one.element-show {
     opacity: 1;
     transition: all 500ms;
     transform: translateX(0);
-}
+} */
 
 .button-section-one:hover,
 .button-section-one:focus {
